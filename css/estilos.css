@@ -1,0 +1,79 @@
+body {
+  text-align:center;
+  font-family: helvetica;
+  margin: 0px;
+  --color: red;
+  
+  
+}
+canvas {
+  
+  width: 33%;
+  height: 44%;
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+   
+}
+
+.logo{
+  width: 15px;
+  height: 10px;
+  border-radius: 100px;
+}
+
+
+@media (min-height: 425px) {
+  body {
+    --size: 25px;
+  }
+
+  footer {
+    height: 40px;
+    font-size: 1em;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: calc(var(--size) * 17);
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.titulo {
+  display: grid;
+  grid-template-columns: repeat(15, auto);
+  grid-template-rows: repeat(17, auto);
+  border: var(--size) solid var(--color);
+}
+.title {
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+}
+.contenido {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  margin-top: 20px;
+  max-width: calc(var(--size) * 17);
+  text-align: center;
+}
+
+footer a:visited {
+  color: inherit;
+}
